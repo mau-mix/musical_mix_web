@@ -6,7 +6,7 @@ export const NavBar = () => {
         <NavBarStyled>
             <AciveLink href="/" text="Inicio"/>
             <AciveLink href="/contact" text="contacto"/>
-            <AciveLink href="/" text="Quienes somos"/>
+            <AciveLink href="/acerca-de" text="Acerca de"/>
         </NavBarStyled>
     )
 }

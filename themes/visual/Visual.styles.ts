@@ -15,17 +15,7 @@ const VisualStyles = {
         light: 300,
         regular: 400,
       },
-      colors: {
-        blue: '#428bca',
-        green: '#42c6a3',
-        orange: '#feac40',
-        purple: '#9da1eb',
-        quote: '#555555',
-        text: '#0f0f0f',
-        white: '#FFFF',
-        red: '#C0392B'
-      }
-    },
+     },
     colors: {
       primary: '#428bca',
       secondary: '#42c6a3',

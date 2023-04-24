@@ -1,20 +1,23 @@
-import {LinkStyled} from './NavBar.styles'
+import {LinkStyled, RedLink } from './NavBar.styles'
 import { useRouter } from 'next/router'
+
+
 
 interface IProps {
     href: string
     text: string
+  
 }
-const style = {
-    color: '#0070f3'
-}
+
 export const AciveLink = (props: IProps) => {
     const {asPath} = useRouter()
+    
+   
 
-    const {href,text} = props
+    const {href, text} = props
     return (
-        <LinkStyled href={href} style={asPath == href ? style : null}>
-         {text}
+        <LinkStyled href={href} passHref legacyBehavior>
+         <RedLink style={asPath == href ? { color: 'red' } : { color: 'black' }}>{text}</RedLink>
        </LinkStyled>
     )
 }
