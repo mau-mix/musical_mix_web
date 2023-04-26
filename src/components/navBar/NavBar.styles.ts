@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import Link from 'next/link'
 
 export const NavBarStyled = styled.nav`
-
+ background-color:${({ theme }) => theme.colors.primary};
 `
 export const LinkStyled = styled(Link)`
 font-size: 15px;
