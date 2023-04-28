@@ -1,14 +1,59 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
+.cont, html {
+  height: 100%;
   margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
 }
-
-html,
-body {
-  max-width: 100vw;
+.img1,.img2,.img3 {
+  position: relative;
+  opacity: 0.70;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-
-
-
+.img1 {
+  background-image: url('https://guiauniversitaria.mx/wp-content/uploads/2020/12/Ep4GKzNXMCuales-son-los-requisitos-para-ser-parte-del-programa-PILARES-2021AsnNRB.jpg');
+  min-height: 100%;
+}
+.img2 {
+  background-image: url('https://pilares.cdmx.gob.mx/assets/images/ajedrez.jpg');
+  min-height: 400px;
+}
+.img3 {
+  background-image: url('https://www.capital21.cdmx.gob.mx/noticias/wp-content/uploads/2021/01/pilares_02.jpg');
+  min-height: 400px;
+}
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+.section-1 {
+  background-color: #3c3e52;
+  color: rgb(255, 254, 254);
+}
+.section-2 {
+  background-color: #0875a0;
+  color: #ddd;
+}
+.texto {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.texto,.titulos {
+  background-color: rgb(148, 148, 148);
+  color: rgb(143, 33, 19);
+  padding: 20px;
+}
+.texto,.transparent {
+  background-color: transparent;
+}
 

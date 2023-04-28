@@ -27,14 +27,14 @@ const VisualStyles = {
     }
   },
   colors: {
-    primary: '#428bca',
-    secondary: '#42c6a3',
+      primary: '#393646',
+      secondary: '#4F4557',
     primaryBold: '#303f9f',
     background: '#ffffff',
     white: '#ffffff',
     dark: '#262626',
-    gray: '#555555',
-    lightGray: '#f3f3f3',
+      gray: '#E9F8F9',
+      lightGray: '#F4EEE0',
     superLightGray: '#fbfbfb',
     contrast: '#f00a0a',
     brown: '#BA6E0B',

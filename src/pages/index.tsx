@@ -1,11 +1,13 @@
+
 import MainLayout from '@/components/layouts/MainLayout'
+import { Inicio } from '@/components/inicio'
 
 export default function Home() {
   return (
     <>
       <MainLayout>
        
-        <h1>Inicio</h1>
+        <Inicio />
       
       </MainLayout>
       

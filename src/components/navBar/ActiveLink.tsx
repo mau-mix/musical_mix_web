@@ -17,7 +17,7 @@ export const AciveLink = (props: IProps) => {
     const {href, text} = props
     return (
         <LinkStyled href={href} passHref legacyBehavior>
-         <RedLink style={asPath == href ? { color: 'red' } : { color: 'black' }}>{text}</RedLink>
+         <RedLink style={asPath == href ? { color: 'red' } : { color: 'white' }}>{text}</RedLink>
        </LinkStyled>
     )
 }
