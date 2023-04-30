@@ -27,7 +27,7 @@ export const Img1 = styled.div`
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: url('/img1.jpeg');
-  min-height: 400px;
+  min-height: 600px;
 `
 export const Img2 = styled.div`
   position: relative;
@@ -37,7 +37,7 @@ export const Img2 = styled.div`
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: url('/img2.jpg');
-  min-height: 400px;
+  min-height: 600px;
 `
 export const Img3 = styled.div`
   position: relative;
@@ -47,20 +47,19 @@ export const Img3 = styled.div`
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: url('/img3.jpg');
-  min-height: 400px;
+  min-height: 600px;
 `
-export const Title = styled.div`
+export const TitleImage = styled.div`
   position: absolute;
     top: 50%;
     width: 100%;
     text-align: center;
-    font-size: 27px;
+    font-size: 2.5rem;
     letter-spacing: 8px;
     text-transform: uppercase;
-    background-color: rgb(148, 148, 148);
-    color: rgb(143, 33, 19);
-    padding: 20px;
+    color: ${({ theme }) => theme.colors.primary};
     background-color: transparent;
+   
 `
 export const Span1 = styled.span`
   position: relative;
@@ -69,27 +68,24 @@ export const Span1 = styled.span`
   padding: 1rem;
   top:200px;   
 `
-export const  Section1 = styled.section`
+export const  TitleSection = styled.h1`
   text-align: center;
-  padding: 50px 80px;
+  color: ${({ theme }) => theme.colors.primary};
+ `
+ export const  TSectextion = styled.p`
+ text-align: center;
+ color: ${({ theme }) => theme.colors.primaryBold};
+`
+export const  Section = styled.section`
+  text-align: center;
+  padding: 2rem 3rem;
   background-color: ${({ theme }) => theme.colors.dark};
   color: rgb(255, 254, 254);
-  
+  border: solid .5rem ${({ theme }) => theme.colors.secondary}
 `
-export const  Section2 = styled.section`
-  text-align: center;
-  padding: 50px 80px;
-  background-color: ${({ theme }) => theme.colors.dark};
-  color: #ddd;
-  
-`
-export const  Section3 = styled.section`
-  text-align: center;
-  padding: 50px 80px;
-  background-color: ${({ theme }) => theme.colors.dark};
-  color: #ddd;
-  
-`
+
+
+//https://colorhunt.co/palette/eeeeee32e0c40d7377212121 paleta
 //colors
 //537FE7 primary
 //C0EEF2  secundary

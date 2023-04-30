@@ -27,9 +27,9 @@ const VisualStyles = {
     }
   },
   colors: {
-      primary: '#393646',
-      secondary: '#4F4557',
-    primaryBold: '#303f9f',
+      primary: '#32E0C4',
+      secondary: '#0D7377',
+    primaryBold: '#EEEEEE',
     background: '#ffffff',
     white: '#ffffff',
     dark: '#262626',

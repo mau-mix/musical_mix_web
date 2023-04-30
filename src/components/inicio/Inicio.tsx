@@ -1,23 +1,23 @@
 import React from 'react'
 import { ContTitleHome } from './Inicio.styles'
+import { TitleNav } from '../titles'
 import {Container,
         Img1, 
         Img2, 
         Img3, 
-        Title, 
-        Span1, 
-        Section1, 
-        Section2, 
-        Section3
+        TitleImage, 
+        TitleSection,
+        TSectextion,
+        Section, 
         } from './Inicio.styles'
 
 const Inicio = () => {
   return (
    
     <Container> 
-       <Section1>
-            <h2>Somos</h2>
-            <p>
+       <Section>
+            <TitleNav />
+            <TSectextion>
             Lorem Ipsum is simply dummy text of the printing and
             typesetting industry. Lorem Ipsum has been the industry's 
             standard dummy text ever since the 1500s, when an unknown 
@@ -25,21 +25,21 @@ const Inicio = () => {
             type specimen book. It has survived not only five centuries
             , but also the leap into electronic typesetting, remaining
              essentially unchanged. It was popularised in
-            </p>
-        </Section1>
+            </TSectextion>
+        </Section>
 
         <Img1>
         <ContTitleHome>
-            <Title>
+            <TitleImage>
                 El mejor ambiente
-            </Title>
+            </TitleImage>
         </ContTitleHome>
         </Img1>
         
 
-       <Section2>
-            <h2>siempre en tus mejores eventos</h2>
-            <p>
+       <Section>
+            <TitleSection>siempre en tus mejores eventos</TitleSection>
+            <TSectextion>
                 Lorem Ipsum is simply dummy text of the printing and
                 typesetting industry. Lorem Ipsum has been the industry's 
                 standard dummy text ever since the 1500s, when an unknown 
@@ -47,20 +47,20 @@ const Inicio = () => {
                 type specimen book. It has survived not only five centuries
                 , but also the leap into electronic typesetting, remaining
                 essentially unchanged. It was popularised in.
-            </p>
-      </Section2>
+            </TSectextion>
+      </Section>
 
        <Img2>
        <ContTitleHome>
-            <Title>
+            <TitleImage>
                 mas de 20 años de experiencia
-            </Title>
+            </TitleImage>
         </ContTitleHome>
         </Img2>
 
-        <Section3>
-          <h2>¿Qué ofrece?</h2>
-            <p>
+        <Section>
+          <TitleSection>¿Qué ofrece?</TitleSection>
+            <TSectextion>
                 Lorem Ipsum is simply dummy text of the printing and
                 typesetting industry. Lorem Ipsum has been the industry's 
                 standard dummy text ever since the 1500s, when an unknown 
@@ -68,14 +68,14 @@ const Inicio = () => {
                 type specimen book. It has survived not only five centuries
                 , but also the leap into electronic typesetting, remaining
                 essentially unchanged. It was popularised in
-            </p>
-        </Section3>
+            </TSectextion>
+        </Section>
         
         <Img3>
         <ContTitleHome>
-            <Title>
+            <TitleImage>
                  El mejor ambiente
-            </Title>
+            </TitleImage>
 
         </ContTitleHome>
 

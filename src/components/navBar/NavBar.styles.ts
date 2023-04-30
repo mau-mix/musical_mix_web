@@ -7,7 +7,7 @@ interface IActive {
 
 export const Container = styled.div`
  background-color:${({ theme }) => theme.colors.dark};
- padding: 1rem;
+ padding: 2rem;
  display: flex;
  justify-content: space-between;
 `
@@ -24,5 +24,5 @@ padding: 5px;
 export const RedLink = styled.a`
   margin: .2rem 1rem;
   font-size: 1rem;
-  //color: ${({ active }) => active ? 'blue' : 'red'};
+  
 `
