@@ -7,8 +7,6 @@ const VisualStyles = {
       small: '0.833rem',
       normal: '1rem',
       normalSmall: '0.97rem',
-      post: '1rem',
-      large: '26px',
     },
     weight: {
       bold: 700,
