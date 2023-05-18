@@ -13,6 +13,8 @@ export const NavBar = () => {
                 <AciveLink href="/" text="Inicio"/>
                 <AciveLink href="/contact" text="contacto"/>
                 <AciveLink href="/acerca-de" text="Acerca de"/>
+                <AciveLink href="/blog" text="Blog"/>
+                <AciveLink href="/videos" text="Videos"/>
             </NavBarStyled>
         </Container>
         

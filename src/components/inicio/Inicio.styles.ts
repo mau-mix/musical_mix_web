@@ -27,7 +27,7 @@ export const Img1 = styled.div`
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: url('/img1.jpeg');
-  min-height: 600px;
+  min-height: 500px;
 `
 export const Img2 = styled.div`
   position: relative;
@@ -37,7 +37,7 @@ export const Img2 = styled.div`
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: url('/img2.jpg');
-  min-height: 600px;
+  min-height: 500px;
 `
 export const Img3 = styled.div`
   position: relative;
@@ -47,7 +47,7 @@ export const Img3 = styled.div`
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: url('/img3.jpg');
-  min-height: 600px;
+  min-height: 500px;
 `
 export const TitleImage = styled.div`
   position: absolute;

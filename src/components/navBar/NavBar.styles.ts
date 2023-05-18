@@ -7,7 +7,7 @@ interface IActive {
 
 export const Container = styled.div`
  background-color:${({ theme }) => theme.colors.dark};
- padding: 2rem;
+ padding: 1rem 1rem 0rem 1rem;
  display: flex;
  justify-content: space-between;
 `

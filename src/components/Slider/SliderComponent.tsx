@@ -3,15 +3,12 @@ import { SliderContainer } from './SliderComponent.styles'
 import CardContainer from './Cards/CardContainer'
 import { Info } from '../../../data/contacto'
 
-interface IProps {
-  id: string
-}
 
-const SliderComponent = (props:IProps) => {
-  const { id } = props
 
+const SliderComponent = () => {
+ 
   return (
-    <SliderContainer id={id}>
+    <SliderContainer>
       <CardContainer size={3} items={Info.items}/>
     </SliderContainer>
   )
