@@ -1,10 +1,12 @@
 import React from 'react'
+import { Container, TitleContacto } from './Contact.style'
+
 
 const Contact = () => {
   return (
-    <div>
-      <h1>contacto</h1>
-    </div>
+    <Container>
+      <TitleContacto>contacto</TitleContacto>
+    </Container>
   )
 }
 

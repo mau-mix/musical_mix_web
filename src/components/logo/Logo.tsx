@@ -4,7 +4,7 @@ import { LogoHome } from './Logo.styles'
 const Logo = () => {
   return (
    
-      <LogoHome>logo</LogoHome>
+      <LogoHome src='/logo-mix.png' />
     
   )
 }

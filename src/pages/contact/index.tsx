@@ -5,10 +5,7 @@ import MainLayout from '@/components/layouts/MainLayout'
 const Index = () => {
   return (
     <MainLayout>
-<div>
       <Contact />
-    </div>
-
     </MainLayout>
     
   )

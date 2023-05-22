@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
-export const LogoHome = styled.div`
-  width: 8rem;
-  text-align: center;
-  color: white;
-  background-color: gray;
-  padding: 1rem;
+export const LogoHome = styled.img`
+  width: 18rem;
+ height: 5rem;
+ margin: 1rem; 
+ 
 `

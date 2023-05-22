@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../../../ui";
 
 export const Container = styled.div`
   height: 100%;
@@ -18,6 +19,9 @@ export const ContTitleHome = styled.div`
   letter-spacing: 8px;
   text-transform: uppercase;
   background-color:blue;
+  @media (max-width: ${breakpoints.sm}px) {
+    
+  }
 `
 export const Img1 = styled.div`
   position: relative;
@@ -54,11 +58,14 @@ export const TitleImage = styled.div`
     top: 50%;
     width: 100%;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     letter-spacing: 8px;
     text-transform: uppercase;
     color: ${({ theme }) => theme.colors.primary};
     background-color: transparent;
+    @media (min-width: ${breakpoints.lg}px) {
+    font-size: 2.5rem;
+  }
    
 `
 export const Span1 = styled.span`
@@ -68,9 +75,12 @@ export const Span1 = styled.span`
   padding: 1rem;
   top:200px;   
 `
-export const  TitleSection = styled.h1`
+export const  TitleSection = styled.div`
   text-align: center;
+  font-size: 4rem;
+  letter-spacing: 6px;
   color: ${({ theme }) => theme.colors.primary};
+  margin: 4rem 0rem 4rem 0rem;
  `
  export const  TSectextion = styled.p`
  text-align: center;

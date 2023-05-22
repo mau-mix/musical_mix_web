@@ -5,8 +5,10 @@ export const ContainerCards = styled.div`
   padding: .5rem;
   display: flex;
   justify-content: center;
+  
 `
 export const ContainerCard = styled.div`
+background-color:${({ theme }) => theme.colors.dark};
   width: 100% ;
   display: flex;
   justify-content: center;

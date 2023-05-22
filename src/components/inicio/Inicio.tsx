@@ -40,7 +40,7 @@ const Inicio = () => {
       
 
        <Section>
-            <TitleSection>siempre en tus mejores eventos</TitleSection>
+            <TitleSection>Siempre en tus mejores eventos</TitleSection>
             <TSectextion>
               <Cards />
             </TSectextion>

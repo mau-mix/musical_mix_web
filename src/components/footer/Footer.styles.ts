@@ -8,9 +8,9 @@ export const Wrapp = styled.div`
   padding-top: 1rem;
  `
 export const Container = styled.div`
+  background-color:${({ theme }) => theme.colors.dark};
   display: flex;
   justify-content: center;
   padding: 1rem;
- 
-`
+ `
 
