@@ -4,7 +4,7 @@ import type { ITheme } from '../../themes/index'
 export const GlobalStyle = createGlobalStyle<ITheme>`
   body {
     font-family: ${(theme: ITheme) => theme.font.family};
-    font-size: ${(theme: ITheme) => theme.font.size.normal};
+   
     font-weight: 400;
     position: absolute;
     top: 0;
@@ -59,7 +59,7 @@ export const GlobalStyle = createGlobalStyle<ITheme>`
     }
     p {
       margin: 0;
-      font-size: ${(theme: ITheme) => theme.font.size.normal}
+      
     }
   }
 `

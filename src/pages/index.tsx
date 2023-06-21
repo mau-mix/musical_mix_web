@@ -4,14 +4,11 @@ import { Inicio } from '@/components/inicio'
 
 export default function Home() {
   return (
-    <>
       <MainLayout>
-       
-        <Inicio />
-      
+          <Inicio />
       </MainLayout>
       
        
-    </>
+    
   )
 }

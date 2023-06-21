@@ -1,5 +1,58 @@
-import styled from "styled-components";
+import styled,{keyframes} from "styled-components";
 import { breakpoints } from "../../../ui";
+
+const fadein = keyframes`
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+`; 
+
+const animatePosition1 = keyframes`
+ 0% {
+    rotate: 0deg;
+  }
+  25% {
+    rotate: y 90deg;
+    scale: 0.5;
+  }
+  50% {
+    rotate: 180deg;
+  }
+  75% {
+    rotate: x 270deg;
+    border-radius: 50%;
+  }
+  100% {
+    rotate: 360deg;
+  }
+`
+ const animatePosition2 = keyframes`
+  0%, 80% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: translate(0, 150px);
+  }
+`
+const animatePosition3 = keyframes`
+  0%, 100% {
+    rotate: 0deg;
+  }
+  50% {
+    transform: translate(0, 150px);
+  }
+`
+const animatePosition4 = keyframes`
+  0%, 100% {
+    transform: translateX(-200px);
+  }
+  50% {
+    transform: translateX(200px);
+  }
+`
 
 export const Container = styled.div`
   height: 100%;
@@ -25,17 +78,17 @@ export const ContTitleHome = styled.div`
 `
 export const Img1 = styled.div`
   position: relative;
-  opacity: 0.70;
-  background-position: center;
+  
+  background-position: 50% 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: url('/img1.jpeg');
-  min-height: 500px;
+  background-image: url('/img1.jpg');
+ height: 40rem;
 `
 export const Img2 = styled.div`
   position: relative;
-  opacity: 0.70;
+ 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -45,7 +98,7 @@ export const Img2 = styled.div`
 `
 export const Img3 = styled.div`
   position: relative;
-  opacity: 0.8;
+  
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -53,19 +106,68 @@ export const Img3 = styled.div`
   background-image: url('/img3.jpg');
   min-height: 500px;
 `
-export const TitleImage = styled.div`
+export const Img4 = styled.div`
+  position: relative;
+  
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url('/img4.jpg');
+  min-height: 500px;
+`
+export const TitleImage1 = styled.p`
   position: absolute;
     top: 50%;
     width: 100%;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: ${({theme}) => theme.font.size.title};
+    font-family: ${({theme}) => theme.font.family};
     letter-spacing: 8px;
     text-transform: uppercase;
     color: ${({ theme }) => theme.colors.primary};
     background-color: transparent;
-    @media (min-width: ${breakpoints.lg}px) {
-    font-size: 2.5rem;
-  }
+    animation: 5s ${animatePosition1}  infinite;;
+`
+export const TitleImage2 = styled.p`
+  position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: ${({theme}) => theme.font.size.title};
+    font-family: ${({theme}) => theme.font.family};
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: ${({ theme }) => theme.colors.primary};
+    background-color: transparent;
+    animation: 10s ${animatePosition3} infinite, 10s ${fadein} infinite;
+     
+`
+export const TitleImage3 = styled.p`
+  position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: ${({theme}) => theme.font.size.title};
+    font-family: ${({theme}) => theme.font.family};
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: ${({ theme }) => theme.colors.primary};
+    background-color: transparent;
+    animation: 8s ${animatePosition2} infinite;
+ `
+export const TitleImage4 = styled.p`
+  position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: ${({theme}) => theme.font.size.title};
+    font-family: ${({theme}) => theme.font.family};
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: ${({ theme }) => theme.colors.primary};
+    background-color: transparent;
+    animation: 5s ${animatePosition4} infinite;
    
 `
 export const Span1 = styled.span`
@@ -77,18 +179,21 @@ export const Span1 = styled.span`
 `
 export const  TitleSection = styled.div`
   text-align: center;
-  font-size: 4rem;
+  font-size: ${({theme}) => theme.font.size.title};
   letter-spacing: 6px;
   color: ${({ theme }) => theme.colors.primary};
   margin: 4rem 0rem 4rem 0rem;
  `
- export const  TSectextion = styled.p`
+ export const  TextSectection = styled.p`
  text-align: center;
  color: ${({ theme }) => theme.colors.primaryBold};
+ font-size: 1.5rem;
+ font-family: sans-serif;
+ letter-spacing: 1px;
 `
 export const  Section = styled.section`
   text-align: center;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   background-color: ${({ theme }) => theme.colors.dark};
   color: rgb(255, 254, 254);
   border: solid .5rem ${({ theme }) => theme.colors.secondary}

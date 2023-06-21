@@ -1,8 +1,6 @@
 import {LinkStyled, RedLink } from './NavBar.styles'
 import { useRouter } from 'next/router'
 
-
-
 interface IProps {
     href: string
     text: string
@@ -12,9 +10,7 @@ interface IProps {
 export const AciveLink = (props: IProps) => {
     const {asPath} = useRouter()
     
-   
-
-    const {href, text} = props
+     const {href, text} = props
     return (
         <LinkStyled href={href} passHref legacyBehavior>
          <RedLink style={asPath == href ? { color: 'red' } : { color: 'white' }}>{text}</RedLink>

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ContainerCards = styled.div`
-  width: 95%;
+  width: 99%;
   padding: .5rem;
   display: flex;
   justify-content: center;
@@ -14,7 +14,7 @@ background-color:${({ theme }) => theme.colors.dark};
   justify-content: center;
   gap: 20px;
   overflow: hidden;
-`
+  `
 export const BtnLeft = styled.button`
   all: unset;
 `

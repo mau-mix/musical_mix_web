@@ -10,18 +10,18 @@ export const CardProp = styled.div`
   transition: background-color .5s ease;
       :hover {
     cursor: pointer;
-    background-color: ${({ theme }) => theme.font.colors.green};
+    background-color: ${({ theme }) => theme.colors.primary};
     color: white;
     box-shadow: 0  5px 10px 2px #000000;
     & div {
-      background-color: ${({ theme }) => theme.font.colors.white};
+      background-color: ${({ theme }) => theme.colors.white};
     }
 }
 `
 export const Title = styled.h1`
   text-align: center;
   font-family: ${({theme}) => theme.font.family};
-  font-size: 1.1rem;
+  font-size: ${({theme}) => theme.font.size.subtitle};
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -29,9 +29,8 @@ export const Title = styled.h1`
 `
 export const Text = styled.p`
   text-align: center;
-  font-size: 16px;
+  font-size: ${({theme}) => theme.font.size.normal};
   font-family: ${({theme}) => theme.font.family};
-  font-size: .8rem;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;

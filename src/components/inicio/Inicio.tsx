@@ -5,12 +5,17 @@ import { Cards } from '../videos'
 import {Container,
         Img1, 
         Img2, 
-        Img3, 
-        TitleImage, 
+        Img3,
+        Img4, 
+        TitleImage1,
+        TitleImage2, 
+        TitleImage3, 
+        TitleImage4,  
         TitleSection,
-        TSectextion,
+        TextSectection,
         Section, 
         } from './Inicio.styles'
+import { data } from '../../../data/inicio'        
 
 const Inicio = () => {
   return (
@@ -19,63 +24,57 @@ const Inicio = () => {
 
         <Img1>
         <ContTitleHome>
-            <TitleImage>
-                El mejor ambiente
-            </TitleImage>
+            <TitleImage1>
+                {data.titleSection1}
+            </TitleImage1>
         </ContTitleHome>
         </Img1>
 
-       <div>
+       <>
           <SliderComponent />
-        </div>
+        </>
 
-        <Img1>
+        <Img2>
         <ContTitleHome>
-            <TitleImage>
-                El mejor ambiente
-            </TitleImage>
+            <TitleImage2>
+                {data.tileSection2}
+            </TitleImage2>
         </ContTitleHome>
-        </Img1>
+        </Img2>
         
       
 
        <Section>
-            <TitleSection>Siempre en tus mejores eventos</TitleSection>
-            <TSectextion>
+            <TitleSection>{data.titleVideos}</TitleSection>
+            <TextSectection>
               <Cards />
-            </TSectextion>
+            </TextSectection>
       </Section>
 
-       <Img2>
+       <Img3>
        <ContTitleHome>
-            <TitleImage>
-                mas de 20 años de experiencia
-            </TitleImage>
+            <TitleImage3>
+                {data.titleSection3}
+            </TitleImage3>
         </ContTitleHome>
-        </Img2>
+        </Img3>
 
         <Section>
-          <TitleSection>¿Qué ofrece?</TitleSection>
-            <TSectextion>
-                Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry. Lorem Ipsum has been the industry's 
-                standard dummy text ever since the 1500s, when an unknown 
-                printer took a galley of type and scrambled it to make a
-                type specimen book. It has survived not only five centuries
-                , but also the leap into electronic typesetting, remaining
-                essentially unchanged. It was popularised in
-            </TSectextion>
+          <TitleSection>{data.titleBar}</TitleSection>
+            <TextSectection>
+              {data.textBar}
+            </TextSectection>
         </Section>
         
-        <Img3>
+        <Img4>
         <ContTitleHome>
-            <TitleImage>
-                 El mejor ambiente
-            </TitleImage>
+            <TitleImage4>
+                 {data.titleSection4}
+            </TitleImage4>
 
         </ContTitleHome>
 
-        </Img3>
+        </Img4>
 </Container>
       
   )
