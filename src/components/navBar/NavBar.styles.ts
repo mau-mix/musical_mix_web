@@ -1,20 +1,20 @@
 import styled from 'styled-components'
+import { breakpoints } from '../../../ui'
 import Link from 'next/link'
 
-interface IActive {
-  active: boolean
-}
 
 export const Container = styled.div`
- background-color: black;
- padding: 1rem 1rem 1rem 1rem;
- display: flex;
- justify-content: space-between;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 `
 
 export const NavBarStyled = styled.nav`
-  padding: .2rem;
-  margin-top: 1rem;
+    display: none;
+    @media (min-width: ${breakpoints.md}px) {
+      display: inherit;
+  }
 `
 export const LinkStyled = styled(Link)`
 font-size: ${({theme}) => theme.font.size.normal};
@@ -24,13 +24,15 @@ padding: 5px;
 
 `
 export const RedLink = styled.a`
-  margin: 2rem 1rem;
   font-size: ${({theme}) => theme.font.size.normal};
   font-family: ${({theme}) => theme.font.family};
   letter-spacing: 1px;
   position: relative;
-  padding: .2rem 1rem;
+  padding: .5rem;
   z-index: 99;
+  @media (min-width: ${breakpoints.md}px) {
+      margin: 1rem;
+  }
   &:before {
     content: " ";
     position: absolute;

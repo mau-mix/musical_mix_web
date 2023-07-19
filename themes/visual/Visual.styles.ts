@@ -3,7 +3,7 @@ const VisualStyles = {
       family: '"Open Sans", sans-serif, "Helvetica Neue", Helvetica, Arial',
       size: {
       title: '2.5rem',
-      subtitle: '1.2rem',
+      subtitle: '1.5rem',
       small: '0.833rem',
       normal: '1rem',
   },

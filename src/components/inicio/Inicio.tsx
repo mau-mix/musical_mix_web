@@ -1,7 +1,6 @@
 import React from 'react'
 import { ContTitleHome } from './Inicio.styles'
 import { SliderComponent } from '../Slider'
-import { Cards } from '../videos'
 import {Container,
         Img1, 
         Img2, 
@@ -32,7 +31,7 @@ const Inicio = () => {
 
        <>
           <SliderComponent />
-        </>
+       </>
 
         <Img2>
         <ContTitleHome>
@@ -41,15 +40,10 @@ const Inicio = () => {
             </TitleImage2>
         </ContTitleHome>
         </Img2>
-        
-      
 
        <Section>
             <TitleSection>{data.titleVideos}</TitleSection>
-            <TextSectection>
-              <Cards />
-            </TextSectection>
-      </Section>
+       </Section>
 
        <Img3>
        <ContTitleHome>

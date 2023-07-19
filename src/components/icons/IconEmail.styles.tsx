@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const ContIconEmail = styled.a `
-        margin: 1rem;
-   position: relative;
-   z-index: 99;
+  margin: 1rem;
+  position: relative;
+  z-index: 99;
     &:before {
       content: " ";
       position: absolute;

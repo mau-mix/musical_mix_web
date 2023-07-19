@@ -1,5 +1,5 @@
 export const navbar = [
-    { text: 'Inicioo', link: '/' },
+    { text: 'Inicio', link: '/' },
     { text: 'contact', link: '/contact' },
 ]
 

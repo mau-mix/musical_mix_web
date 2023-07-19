@@ -1,5 +1,7 @@
+'use client'
 import React from 'react'
-import { CardProp, Title, Text, Ima } from './StyleCard.styles'
+import { CardProp, Title, Text, ContainerImage } from './StyleCard.styles'
+import Image from 'next/image'
 
 
 interface IProps {
@@ -13,7 +15,21 @@ const Card = (props: IProps) => {
   return (
     <CardProp>
       <Title>{title}</Title>
-   <div><Ima src={url}/></div>
+   <ContainerImage><Image 
+            alt="" 
+            src={url}
+            width={300}
+            height={200}
+            sizes="100vw"
+            style={{
+              width: '100%',
+              height: '200px',
+            }}
+      
+            />
+            
+
+   </ContainerImage>
       <Text>{text}</Text>
     </CardProp>
   )

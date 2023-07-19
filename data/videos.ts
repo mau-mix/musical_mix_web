@@ -17,5 +17,7 @@ export const data= {
     url6: 'https://fb.watch/lhEK7nI_QE',
     url7: 'https://fb.watch/liGd4rkziW/',
     url8: 'https://fb.watch/li0kGeLPg4',
-    titleEnlace: "Ir al Video"
+    titleEnlace: "Ir al Video",
+    nameTitle1: "Musical",
+    nameTitle2: "Mix"
 }

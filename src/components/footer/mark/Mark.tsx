@@ -3,7 +3,7 @@ import { MarkStyled } from './Mark.styles'
 
 const Mark = () => {
 return (
-    <MarkStyled>______________________________________________</MarkStyled>
+    <MarkStyled>__</MarkStyled>
 )
 
 }

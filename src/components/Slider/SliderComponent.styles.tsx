@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 
 export const SliderContainer = styled.div`
-  width: 100% ;
-  max-height: 20rem;
+   max-height: 22rem;
   background-color: black;
   border: solid .5rem ${({ theme }) => theme.colors.secondary}
 `

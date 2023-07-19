@@ -4,7 +4,7 @@ import { FaFacebookMessenger } from 'react-icons/fa'
 
 const IconEmail = () => {
   return (
-    <ContIconEmail href='https://www.facebook.com/a.musicalmix'>
+    <ContIconEmail target="_blank" rel="noopener" href='https://www.facebook.com/a.musicalmix'>
        <FaFacebookMessenger size={25}/>
     </ContIconEmail>
   )

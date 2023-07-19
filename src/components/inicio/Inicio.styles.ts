@@ -71,103 +71,115 @@ export const ContTitleHome = styled.div`
   font-size: 2rem;
   letter-spacing: 8px;
   text-transform: uppercase;
-  background-color:blue;
-  @media (max-width: ${breakpoints.sm}px) {
-    
-  }
+
 `
 export const Img1 = styled.div`
   position: relative;
-  
-  background-position: 50% 100%;
+  background-position: 20% 50%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-image: url('/img1.jpg');
- height: 40rem;
+  background-image: url('/img1a.jpg');
+  height: 25rem;
+    @media (min-width: ${breakpoints.md}px) {
+      height: 40rem; 
+      background-position: 50% 100%;
+      background-attachment: fixed;
+  }
 `
 export const Img2 = styled.div`
   position: relative;
- 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: url('/img2.jpg');
-  min-height: 500px;
+  background-image: url('/img2a.jpg');
+  height: 25rem;
+  @media (min-width: ${breakpoints.md}px) {
+      height: 40rem; 
+ }
 `
 export const Img3 = styled.div`
   position: relative;
-  
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: url('/img3.jpg');
+  background-image: url('/img3b.jpg');
   min-height: 500px;
 `
 export const Img4 = styled.div`
   position: relative;
-  
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: url('/img4.jpg');
+  background-image: url('/img4b.jpg');
   min-height: 500px;
 `
 export const TitleImage1 = styled.p`
   position: absolute;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    font-size: ${({theme}) => theme.font.size.title};
-    font-family: ${({theme}) => theme.font.family};
-    letter-spacing: 8px;
-    text-transform: uppercase;
-    color: ${({ theme }) => theme.colors.primary};
-    background-color: transparent;
-    animation: 5s ${animatePosition1}  infinite;;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  font-size: ${({theme}) => theme.font.size.subtitle};
+  font-family: ${({theme}) => theme.font.family};
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: ${({ theme }) => theme.colors.primary};
+  background-color: transparent;
+  animation: 5s ${animatePosition1}  infinite;
+    @media (min-width: ${breakpoints.md}px) {
+      font-size: ${({theme}) => theme.font.size.title};
+      top: 50%;
+  }
 `
 export const TitleImage2 = styled.p`
   position: absolute;
-    top: 50%;
     width: 100%;
     text-align: center;
-    font-size: ${({theme}) => theme.font.size.title};
+    font-size: ${({theme}) => theme.font.size.subtitle};
     font-family: ${({theme}) => theme.font.family};
     letter-spacing: 8px;
     text-transform: uppercase;
     color: ${({ theme }) => theme.colors.primary};
     background-color: transparent;
-    animation: 10s ${animatePosition3} infinite, 10s ${fadein} infinite;
-     
+    animation: 10s ${animatePosition1} infinite, 10s ${fadein} infinite;
+    @media (min-width: ${breakpoints.md}px) {
+      font-size: ${({theme}) => theme.font.size.title};
+      letter-spacing: 8px;
+  } 
 `
 export const TitleImage3 = styled.p`
   position: absolute;
     top: 50%;
     width: 100%;
     text-align: center;
-    font-size: ${({theme}) => theme.font.size.title};
+    font-size: ${({theme}) => theme.font.size.subtitle};
     font-family: ${({theme}) => theme.font.family};
     letter-spacing: 8px;
     text-transform: uppercase;
     color: ${({ theme }) => theme.colors.primary};
     background-color: transparent;
-    animation: 8s ${animatePosition2} infinite;
+    animation: 8s ${animatePosition1} infinite;
+    @media (min-width: ${breakpoints.md}px) {
+      font-size: ${({theme}) => theme.font.size.title};
+    } 
  `
 export const TitleImage4 = styled.p`
   position: absolute;
     top: 50%;
     width: 100%;
     text-align: center;
-    font-size: ${({theme}) => theme.font.size.title};
+    font-size: ${({theme}) => theme.font.size.subtitle};
     font-family: ${({theme}) => theme.font.family};
     letter-spacing: 8px;
     text-transform: uppercase;
     color: ${({ theme }) => theme.colors.primary};
     background-color: transparent;
-    animation: 5s ${animatePosition4} infinite;
+    animation: 5s ${animatePosition1} infinite;
+    @media (min-width: ${breakpoints.md}px) {
+      font-size: ${({theme}) => theme.font.size.title};
+    } 
    
 `
 export const Span1 = styled.span`
@@ -179,10 +191,14 @@ export const Span1 = styled.span`
 `
 export const  TitleSection = styled.div`
   text-align: center;
-  font-size: ${({theme}) => theme.font.size.title};
-  letter-spacing: 6px;
+  font-size: ${({theme}) => theme.font.size.subtitle};
+  letter-spacing: 2px;
   color: ${({ theme }) => theme.colors.primary};
   margin: 4rem 0rem 4rem 0rem;
+    @media(min-width: ${breakpoints.md}px) {
+      font-size: ${({theme}) => theme.font.size.title};
+      letter-spacing: 6px;
+  }
  `
  export const  TextSectection = styled.p`
  text-align: center;

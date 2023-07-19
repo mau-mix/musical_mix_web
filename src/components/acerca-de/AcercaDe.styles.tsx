@@ -1,35 +1,55 @@
 import styled from "styled-components";
+import { breakpoints } from "../../../ui";
 
 export const Container = styled.div`
-    background-color: black;
+    background-color: ${({theme}) => theme.colors.dark};
+    padding: 2%;
+    width: 96%;
 `
 export const Title = styled.h1`
     color: ${({theme}) => theme.colors.primary};
     text-align: center;
-    margin: 2rem;
-    font-size: ${({theme}) => theme.font.size.title};
+    font-size: ${({theme}) => theme.font.size.subtitle};
     text-transform: uppercase;
     font-family: sans-serif;
     letter-spacing: 8px;
+    @media(min-width: ${breakpoints.md}px) {
+        font-size: ${({theme}) => theme.font.size.title};  
+  }
 `
 export const Description = styled.p`
     color: white;
     text-align: center;
     letter-spacing: 1px;
     font-family: sans-serif;
-    font-size: 1.4rem;
+    font-size: ${({theme}) => theme.font.size.normal}; 
+    @media(min-width: ${breakpoints.md}px) {
+        font-size: ${({theme}) => theme.font.size.subtitle};  
+  }
 
 `
 export const Wrapp = styled.div`
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    padding: 5%;
+    grid-template-columns: repeat(1, 1fr);
+    width: 96%;
+   
+    padding: 2%;
+    margin: auto;
+    gap: 1%;
     background-color: black;
+    
+
+      @media(min-width: ${breakpoints.md}px) {
+         grid-template-columns: repeat(3, 1fr);
+  }
+  @media(min-width: ${breakpoints.lg}px) {
+         grid-template-columns: repeat(4, 1fr);
+         gap: 2%; 
+  }
     `
-export const Images = styled.img`
-    height: 18rem;
-    width: 90%;
-    margin-bottom: 10%;
+export const Images = styled.div`
+    height: 17rem;
+    width: 100%;
     border-radius:.5rem;
     border: solid gray 1px;
 `

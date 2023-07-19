@@ -1,11 +1,26 @@
 import React from 'react'
-import {EnlaceLogo, LogoHome } from './Logo.styles'
+import {EnlaceLogo } from './Logo.styles'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const Logo = () => {
   return (
-      <EnlaceLogo href='/'>
-        <LogoHome src='/logo-mix1.png' />
-      </EnlaceLogo>
+    <EnlaceLogo>
+      <Link href='/'>
+        <Image 
+           src='/logo-mix1.png' 
+           width={170} 
+           height={40} 
+           alt='logo'
+           style={{
+            width: '170px',
+            height: 'auto',
+           
+        }}
+           />
+      </Link>
+   </EnlaceLogo>
+     
       
     
   )

@@ -4,7 +4,7 @@ import { FaFacebook } from 'react-icons/fa'
 
 const IconFacebok = () => {
   return (
-    <IconFace href='https://www.facebook.com/a.musicalmix'>
+    <IconFace target="_blank" rel="noopener" href='https://www.facebook.com/a.musicalmix'>
       <FaFacebook size={25}/>
     </IconFace >
   )

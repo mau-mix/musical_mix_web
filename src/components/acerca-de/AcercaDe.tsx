@@ -1,9 +1,10 @@
 import React from 'react'
 import { Container, Description, Title, Wrapp, Images } from './AcercaDe.styles'
 import {data} from '../../../data/acercaDe'
+import Image from 'next/image'
 
 const AcercaDe = () => {
-  console.log(data)
+  
   return (
     <Container>
       <Title>{data.title}</Title>
@@ -14,7 +15,21 @@ const AcercaDe = () => {
       <Wrapp>
         {data.images.map(item => {
           return (
-             <Images src={item.url} />
+             <Image 
+                sizes="100vw"
+                key={item.url}
+                src={item.url}
+                width={350} 
+                height={200} 
+                alt=''
+                style={{
+                  width: '100%',
+                  height: 'auto',
+                  borderRadius: '10px',
+                  marginTop: '8px'
+                }}
+                />
+                
              )
           }
         )}

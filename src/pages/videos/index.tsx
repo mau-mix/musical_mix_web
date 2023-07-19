@@ -6,9 +6,7 @@ import { Cards } from '@/components/videos'
 const index = () => {
   return (
     <MainLayout>
-      
       <Cards />
-     
     </MainLayout>
    
       

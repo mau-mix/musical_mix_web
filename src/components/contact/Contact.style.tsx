@@ -1,12 +1,15 @@
 import styled from "styled-components";
+import { breakpoints } from "../../../ui";
 
 export const Container = styled.div`
    background-color:${({ theme }) => theme.colors.dark};
-   height: 20rem;
-   padding: 10%;
+   padding: 5%;
+   height: 25rem;
+ 
 `
 export const TitleContacto = styled.h1`
    background-color: black;
+   padding: 2rem;
    text-align: center;
    font-size: ${({theme}) => theme.font.size.title};
    font-family: ${({theme}) => theme.font.family};
@@ -14,24 +17,35 @@ export const TitleContacto = styled.h1`
    letter-spacing: 5px;
 `
 export const ContInfo = styled.div`
-   padding: .5rem;
+  padding: 1rem 0rem;
    
 `
 export const ContIcons = styled.div`
-   display: flex;
-   justify-content: space-around;
+     display: flex;
+     flex-direction: column;
+
+   @media(min-width: ${breakpoints.md}px) {
+     flex-direction: row;
+     justify-content: space-around;
+  }
 `
 export const ContDescription = styled.div`
   display: flex;
   padding: .2rem;
- 
-  margin-left: 1rem;
+
+   @media(min-width: ${breakpoints.md}px) {
+     margin-left: 1rem;  
+  }
 `
 export const Description = styled.p`
   color: ${({ theme }) => theme.colors.primary};
-  font-size: ${({theme}) => theme.font.size.subtitle};
+  font-size: ${({theme}) => theme.font.size.normal};
   font-family: ${({theme}) => theme.font.family};
-  letter-spacing:2px;
+  
+  @media(min-width: ${breakpoints.md}px) {
+    letter-spacing: 2px;
+    font-size: ${({theme}) => theme.font.size.subtitle};
+  }
 `
 
 

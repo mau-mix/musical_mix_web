@@ -7,8 +7,7 @@ const Index = () => {
     <MainLayout>
       <Contact />
     </MainLayout>
-    
-  )
+ )
 }
 
 export default Index
