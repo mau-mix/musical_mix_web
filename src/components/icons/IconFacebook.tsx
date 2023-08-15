@@ -1,4 +1,3 @@
-import React from 'react'
 import { IconFace } from './IconFacebook.styles'
 import { FaFacebook } from 'react-icons/fa'
 

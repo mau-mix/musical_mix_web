@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { IconInsta } from './IconInstagram.styles'
 import { FaInstagram } from 'react-icons/fa'
 

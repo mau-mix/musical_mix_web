@@ -2,7 +2,7 @@ import { AciveLink } from "./ActiveLink"
 import {NavBarStyled} from './NavBar.styles'
 import { Container } from "./NavBar.styles"
 import { Logo } from "../logo"
-import IconBars from "../icons/IconBars"
+import NavB from "../navB/NavB"
 
 
 
@@ -10,7 +10,7 @@ export const NavBar = () => {
     return (
         <Container>
             <Logo/>
-            <IconBars />
+            <NavB />
         <NavBarStyled>
                 <AciveLink href="/" text="Inicio"/>
                 <AciveLink href="/contact" text="contacto"/>

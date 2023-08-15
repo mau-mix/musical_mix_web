@@ -1,6 +1,10 @@
 export const navbar = [
-    { text: 'Inicio', link: '/' },
-    { text: 'contact', link: '/contact' },
+    { href:"/", text:"Inicio"},
+    { href:"/contact", text:"contacto"},
+    { href:"/acerca-de", text:"acerca de"},
+    { href:"/blog", text:"blog"},
+    { href:"/videos", text:"videos"},
+   
 ]
 
 

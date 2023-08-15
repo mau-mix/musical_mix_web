@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { ContTitleHome } from './Inicio.styles'
 import { SliderComponent } from '../Slider'
 import {Container,
