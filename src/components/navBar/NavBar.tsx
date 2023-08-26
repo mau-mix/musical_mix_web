@@ -3,6 +3,7 @@ import {NavBarStyled} from './NavBar.styles'
 import { Container } from "./NavBar.styles"
 import { Logo } from "../logo"
 import NavB from "../navB/NavB"
+import { navbar } from "../../../data/menu"
 
 
 
@@ -12,11 +13,9 @@ export const NavBar = () => {
             <Logo/>
             <NavB />
         <NavBarStyled>
-                <AciveLink href="/" text="Inicio"/>
-                <AciveLink href="/contact" text="contacto"/>
-                <AciveLink href="/acerca-de" text="Acerca de"/>
-                <AciveLink href="/blog" text="Blog"/>
-                <AciveLink href="/videos" text="Videos"/>
+              {navbar.map( item => (
+                <AciveLink href={item.href} text={item.text} key={item.href}/>
+              ))}
             </NavBarStyled>
         </Container>
         

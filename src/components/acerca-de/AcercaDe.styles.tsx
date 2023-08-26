@@ -32,24 +32,21 @@ export const Wrapp = styled.div`
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 96%;
-   
     padding: 2%;
     margin: auto;
     gap: 1%;
     background-color: black;
-    
-
-      @media(min-width: ${breakpoints.md}px) {
-         grid-template-columns: repeat(3, 1fr);
+    @media(min-width: ${breakpoints.md}px) {
+        grid-template-columns: repeat(3, 1fr);
   }
-  @media(min-width: ${breakpoints.lg}px) {
-         grid-template-columns: repeat(4, 1fr);
-         gap: 2%; 
+    @media(min-width: ${breakpoints.lg}px) {
+        grid-template-columns: repeat(4, 1fr);
+       
   }
     `
 export const Images = styled.div`
-    height: 17rem;
+    height: 14rem;
     width: 100%;
-    border-radius:.5rem;
-    border: solid gray 1px;
+    position: relative;
+    margin: 0 auto;
 `

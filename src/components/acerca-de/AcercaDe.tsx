@@ -15,20 +15,16 @@ const AcercaDe = () => {
       <Wrapp>
         {data.images.map(item => {
           return (
-             <Image 
-                sizes="100vw"
+            <Images>
+              <Image 
                 key={item.url}
                 src={item.url}
-                width={350} 
-                height={200} 
-                alt=''
-                style={{
-                  width: '100%',
-                  height: 'auto',
-                  borderRadius: '10px',
-                  marginTop: '8px'
-                }}
+                fill 
+                alt='images-group'
+                style={{borderRadius: '.5rem'}}
                 />
+            </Images>
+             
                 
              )
           }

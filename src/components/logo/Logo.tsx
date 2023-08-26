@@ -12,12 +12,7 @@ const Logo = () => {
            width={170} 
            height={40} 
            alt='logo'
-           style={{
-            width: '170px',
-            height: 'auto',
-           
-        }}
-           />
+          />
       </Link>
    </EnlaceLogo>
      

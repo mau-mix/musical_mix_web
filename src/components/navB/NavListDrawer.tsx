@@ -4,6 +4,8 @@ import {List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/
 
 
 const NavListDrawer = ({NavLink}) => {
+
+  console.log(NavLink)
   return (
     <Box sx={{width: 250}}>
        <nav>
