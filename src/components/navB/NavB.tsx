@@ -33,7 +33,7 @@ const NavB = () => {
        </ButtonBar>   
          
          <Drawer open={open} anchor='left' onClose={() => setOpen(false)} >
-          <NavListDrawer NavLink={NavLink}/>
+          <NavListDrawer items={NavLink}/>
         </Drawer>
     </ContainerNavResponsive>
   )

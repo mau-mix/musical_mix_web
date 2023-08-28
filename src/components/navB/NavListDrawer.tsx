@@ -2,15 +2,25 @@ import React from 'react'
 import { Box } from '@mui/system'
 import {List, ListItem, ListItemButton, ListItemIcon, ListItemText } from '@mui/material'
 
+interface ILink {
+  text: string
+  href: string
+  icon: JSX.Element
 
-const NavListDrawer = ({NavLink}) => {
+}
+interface IProps {
+  items: ILink[]
+}
+const NavListDrawer = (props: IProps) => {
 
-  console.log(NavLink)
+  const { items } = props
+
+ 
   return (
     <Box sx={{width: 250}}>
        <nav>
         <List sx={{backgroundColor: 'black'}}>
-          {NavLink.map(item => (
+          {items.map(item => (
             
              <ListItem disablePadding key={item.text}>
                 <ListItemButton component="a" href={item.href}>
