@@ -40,17 +40,15 @@ const CardPublication = (props: IProps) => {
   
   return (
     <Container>
-       <ContainerImage>
+      <ContainerImage>
          <Title>{title}</Title>
-        <Image src={url} alt='image-page' width={500} height={500} style={styleImage}/>
-        <ContLink>
-          <Link href={enlace}>{go}</Link>
+         <Image src={url} alt='image-page' width={500} height={500} style={styleImage}/>
+         <ContLink>
+            <Link href={enlace}>{go}</Link>
         </ContLink>
-        
       </ContainerImage>
 
       <ContainerInfo>
-       
         <Text>{a}</Text>
         <Text>{b}</Text>
         <Text>{c}</Text>
@@ -61,10 +59,7 @@ const CardPublication = (props: IProps) => {
         <Text>{h}</Text>
         <Text>{i}</Text>
         <Text>{j}</Text>
-       
       </ContainerInfo>
-      
-     
     </Container>
   )
 }
