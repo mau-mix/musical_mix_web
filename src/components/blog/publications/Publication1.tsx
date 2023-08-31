@@ -1,6 +1,6 @@
 import React from 'react'
 import {IDescription} from '../types'
-import { Container, Card, Title, Enlace, ContainerCards, ContainerDescription, Description} from './Publications.styles'
+/*import { Container, Card, Title, Enlace, ContainerCards, ContainerDescription, Description} from './Publications.styles'
 import Image from 'next/image'
 import CardPublication from './CardPublication'
 

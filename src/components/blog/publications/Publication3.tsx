@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 import {IDescription, IDescArray} from '../types'
 import { Container, ContainerCards, ContainerDescription, Description, Card, Title, Enlace} from './Publications.styles'
 import Image from 'next/image'

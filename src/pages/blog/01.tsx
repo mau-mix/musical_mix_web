@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 import {info} from '../../../data/blog'
 import Publication1 from '@/components/blog/publications/Publication1'
 import MainLayout from '@/components/layouts/MainLayout'

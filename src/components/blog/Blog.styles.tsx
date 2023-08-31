@@ -4,16 +4,18 @@ import { breakpoints } from "../../../ui";
 
 export const Container = styled.div`
     background-color: ${({ theme }) => theme.colors.dark};
-    width: 96%;
+    width: 83%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
     padding: 2rem;
     @media (min-width: ${breakpoints.md}px){
         grid-template-columns: repeat(2, 1fr);  
+        width: 92%;
     }
     @media (min-width: ${breakpoints.lg}px){
-        grid-template-columns: repeat(3, 1fr);  
+        grid-template-columns: repeat(3, 1fr); 
+        width: 96%;
     }
 `
 export const ContainerCard = styled.div`

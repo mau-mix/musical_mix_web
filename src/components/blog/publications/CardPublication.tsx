@@ -42,7 +42,7 @@ const CardPublication = (props: IProps) => {
     <Container>
        <ContainerImage>
          <Title>{title}</Title>
-        <Image src={url} alt='' width={500} height={500} style={styleImage}/>
+        <Image src={url} alt='image-page' width={500} height={500} style={styleImage}/>
         <ContLink>
           <Link href={enlace}>{go}</Link>
         </ContLink>

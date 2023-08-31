@@ -13,11 +13,11 @@ const AcercaDe = () => {
          {data.description2}
     </Description>
       <Wrapp>
-        {data.images.map(item => {
+        {data.images.map(( item, index ) => {
           return (
             <Images>
               <Image 
-                key={item.url}
+                key={index}
                 src={item.url}
                 fill 
                 alt='images-group'
