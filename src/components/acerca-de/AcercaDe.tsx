@@ -15,9 +15,9 @@ const AcercaDe = () => {
       <Wrapp>
         {data.images.map(( item, index ) => {
           return (
-            <Images>
+            <Images key={index} >
               <Image 
-                key={index}
+               
                 src={item.url}
                 fill 
                 alt='images-group'

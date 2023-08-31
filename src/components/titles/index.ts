@@ -1,1 +1,1 @@
-export {default as TitleNav} from './TitleNav'
+export {default as TitleNav} from './Title'
