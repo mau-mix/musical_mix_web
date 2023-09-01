@@ -10,7 +10,7 @@ import { data } from '../../../data/dataContact'
 const Contact = () => {
   return (
     <Container>
-      <ContInfo>
+     
         <TitleContacto>{data.title}</TitleContacto>
         <ContIcons>
 
@@ -28,7 +28,7 @@ const Contact = () => {
          
         </ContIcons>
         
-      </ContInfo>
+      
       
 
     </Container>
