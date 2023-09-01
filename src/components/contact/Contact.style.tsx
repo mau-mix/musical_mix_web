@@ -4,20 +4,23 @@ import { breakpoints } from "../../../ui";
 export const Container = styled.div`
    background-color:${({ theme }) => theme.colors.dark};
    padding: 5%;
-   height: 25rem;
+   height: 24rem;
  
 `
 export const TitleContacto = styled.h1`
    background-color: black;
    padding: 2rem;
    text-align: center;
-   font-size: ${({theme}) => theme.font.size.title};
+   font-size: ${({theme}) => theme.font.size.subtitle};
    font-family: ${({theme}) => theme.font.family};
    color: ${({ theme }) => theme.colors.primary};
    letter-spacing: 5px;
+   @media(min-width: ${breakpoints.md}px) {
+    font-size: ${({theme}) => theme.font.size.title};
+  }
 `
 export const ContInfo = styled.div`
-  padding: 1rem 0rem;
+  padding: 0rem;
    
 `
 export const ContIcons = styled.div`
@@ -31,8 +34,6 @@ export const ContIcons = styled.div`
 `
 export const ContDescription = styled.div`
   display: flex;
-  padding: .2rem;
-
    @media(min-width: ${breakpoints.md}px) {
      margin-left: 1rem;  
   }
