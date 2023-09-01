@@ -202,7 +202,7 @@ export const  TitleSection = styled.div`
  `
  export const  TextSectection = styled.p`
  text-align: center;
- color: ${({ theme }) => theme.colors.primaryBold};
+ color: ${({ theme }) => theme.colors.white};
  font-size: 1.5rem;
  font-family: sans-serif;
  letter-spacing: 1px;

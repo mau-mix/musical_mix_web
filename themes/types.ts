@@ -33,7 +33,7 @@ export interface IFontColors {
 
 export interface IFont {
   family: string
- 
+  size: ISize
   weight: IWeight
   colors: IFontColors
 }
