@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, TitleContacto, ContInfo, ContIcons, ContDescription, Description  } from './Contact.style'
+import { Container, TitleContacto, ContIcons, ContDescription, Description  } from './Contact.style'
 import IconPhone from '../icons/IconPhone'
 import IconWatsapp from '../icons/IconWatsapp'
 import IconEmail from '../icons/IconEmail'

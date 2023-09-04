@@ -11,7 +11,7 @@ export const TitleContacto = styled.h1`
    background-color: black;
    padding: 1rem;
    text-align: center;
-   font-size: ${({theme}) => theme.font.size.subtitle};
+   font-size: 10px;
    font-family: ${({theme}) => theme.font.family};
    color: ${({ theme }) => theme.colors.primary};
    letter-spacing: 2px;
