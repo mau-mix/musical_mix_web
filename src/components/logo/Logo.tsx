@@ -9,8 +9,8 @@ const Logo = () => {
       <Link href='/'>
         <Image 
            src='/logo-mix1.png' 
-           width={170} 
-           height={50} 
+           width={230} 
+           height={60} 
            alt='logo'
           />
       </Link>

@@ -59,11 +59,10 @@ export const ContEnlace = styled.div`
   display: flex;
   width: 9rem;
   background-color:${({ theme }) => theme.colors.dark};
-  padding: 0rem 1rem;
+  padding: 0rem 1rem 1rem;
   border-radius: 8px;
-  opacity:.7;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
   
   :hover {
     cursor: pointer;
@@ -72,11 +71,18 @@ export const ContEnlace = styled.div`
 `
 export const Enlace = styled(Link)`
   margin-top: 1rem;
-   font-size: ${({theme}) => theme.font.size.normal};
+  font-size: ${({theme}) => theme.font.size.normal};
   color: ${({ theme }) => theme.colors.primary};
   :hover {
   color: white;
   animation: 1s ${fadein} ease-in;
   }
+`
+export const TitleEnlace = styled.span`
+  color: ${({ theme }) => theme.colors.primary};
+  text-align: center;
+  margin-left: 2rem;
+  
+
 `
 

@@ -5,9 +5,10 @@ import Link from 'next/link'
 
 export const Container = styled.div`
   background-color: black;
-  width: 100%;
+  width: 98.5%;
   display: flex;
   justify-content: space-between;
+  padding: .8rem 1.5rem;
 `
 
 export const NavBarStyled = styled.nav`
@@ -24,7 +25,7 @@ padding: 5px;
 
 `
 export const RedLink = styled.a`
-  font-size: ${({theme}) => theme.font.size.normal};
+  font-size: 1.2rem;
   font-family: ${({theme}) => theme.font.family};
   letter-spacing: 1px;
   position: relative;

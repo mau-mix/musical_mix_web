@@ -113,7 +113,7 @@ export const Img4 = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: url('/img4b.jpg');
+  background-image: url('/img4.jpg');
   min-height: 500px;
 `
 export const TitleImage1 = styled.p`

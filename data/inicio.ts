@@ -5,7 +5,7 @@ export const data = {
     titleSection3: "mas de 20 años de experiencia",
     titleBar: "¿Qué ofrece?",
     titleSection4: "El mejor ambiente",
-    textBar: "Lograr que los eventos de nuestros clientes sean inolvidables,crear un ambiente de diversión y alegría con nuestros momentos musicales que perduren en el recuerdo de los participantes de sus fiestas"
+    textBar: "Crear un ambiente de diversión y alegría que perduren en el recuerdo de tus invitados"
     
      
 }

@@ -15,7 +15,8 @@ import {Container,
         TextSectection,
         Section, 
         } from './Inicio.styles'
-import { data } from '../../../data/inicio'        
+import { data } from '../../../data/inicio'
+import { Contact } from '../contact'        
 
 const Inicio = () => {
   return (
@@ -66,10 +67,17 @@ const Inicio = () => {
             <TitleImage4>
                  {data.titleSection4}
             </TitleImage4>
-
         </ContTitleHome>
-
         </Img4>
+
+        
+        <Section>
+            <TextSectection>
+             <Contact />
+            </TextSectection>
+        </Section>
+
+        
 </Container>
       
   )
