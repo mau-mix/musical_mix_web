@@ -17,7 +17,7 @@ export const Wrapp = styled.div`
 `
 export const ContainerCards = styled.div`
   background-color: ${({ theme }) => theme.colors.dark};
-  width: 95%;
+  width: 98%;
   padding: 2%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -62,7 +62,7 @@ export const ContEnlace = styled.div`
   padding: 0rem 1rem 1rem;
   border-radius: 8px;
   margin: auto;
-  margin-top: 1rem;
+  margin-top: 2rem;
   
   :hover {
     cursor: pointer;

@@ -20,7 +20,7 @@ export const data= {
     url1: 'https://fb.watch/lhoKaf9uNo',
     url2: 'https://fb.watch/rRa6VHO2dc/',
     url3: 'https://fb.watch/rRatromdHa/',
-    url4: 'https://www.facebook.com/a.musicalmix',
+    url4: 'img3.jpg',
     url5: 'https://www.facebook.com/100004842369886/videos/3091583701013012',
     url6: 'https://fb.watch/lhEK7nI_QE',
     url7: 'https://fb.watch/liGd4rkziW/',
@@ -32,9 +32,9 @@ export const data= {
     url13: 'https://fb.watch/rS5cR-b6jy/',
     url14: 'https://fb.watch/rS5OwwxRUq/',
     url15: 'https://fb.watch/rSbVT25kee/',
-    url16: 'https://fb.watch/rScgrLHEUM/',
+    url16: 'https://fb.watch/rWsdnflIso/',
 
     titleEnlace: "Ir al Video",
     nameTitle1: "Musical Mix",
-    nameTitle2: "Mix"
+   
 }
