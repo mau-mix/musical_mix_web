@@ -69,15 +69,10 @@ const Inicio = () => {
             </TitleImage4>
         </ContTitleHome>
         </Img4>
-
-        
         <Section>
-            <TextSectection>
-             <Contact />
-            </TextSectection>
+            <Contact />
         </Section>
-
-        
+         
 </Container>
       
   )

@@ -35,6 +35,6 @@ export const data= {
     url16: 'https://fb.watch/rScgrLHEUM/',
 
     titleEnlace: "Ir al Video",
-    nameTitle1: "Musical",
+    nameTitle1: "Musical Mix",
     nameTitle2: "Mix"
 }
