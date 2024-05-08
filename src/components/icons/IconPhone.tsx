@@ -5,7 +5,7 @@ import {FaPhone} from 'react-icons/fa'
 
 const IconPhone = () => {
   return (
-    <ContIconPhone href='https://www.facebook.com/a.musicalmix'>
+    <ContIconPhone href='tel:+5536543265'>
       <FaPhone size={25}/>
     </ContIconPhone>
   )

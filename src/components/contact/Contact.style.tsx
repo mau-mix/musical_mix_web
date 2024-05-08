@@ -3,8 +3,10 @@ import { breakpoints } from "../../../ui";
 
 export const Container = styled.div`
    background-color:${({ theme }) => theme.colors.dark};
-   
-   height: 26rem;
+   height: 18rem;
+  @media(min-width: ${breakpoints.md}px) {
+    height: 13rem;
+  }
  
 `
 export const TitleContacto = styled.h1`

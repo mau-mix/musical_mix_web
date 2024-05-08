@@ -5,10 +5,13 @@ import Link from 'next/link'
 
 export const Container = styled.div`
   background-color: black;
-  width: 98.5%;
+  width: 92%;
   display: flex;
   justify-content: space-between;
   padding: .8rem 1.5rem;
+  @media (min-width: ${breakpoints.md}px) {
+      width: 99%;
+  }
 `
 
 export const NavBarStyled = styled.nav`
