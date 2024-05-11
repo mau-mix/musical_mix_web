@@ -11,24 +11,27 @@ const fadein = keyframes`
   }
 `
 
-export const Wrapp = styled.div`
-  background-color: black;
-  width: 100%;
-`
+
 export const ContainerCards = styled.div`
   background-color: ${({ theme }) => theme.colors.dark};
-  width: 98%;
+  width: 95%;
   padding: 2%;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 1rem;
+  gap: .5rem;
+
+  @media(min-width: ${breakpoints.mm}px) {
+      grid-template-columns: repeat(2, 1fr);
+      width: 98%;
+}
  
     @media(min-width: ${breakpoints.md}px) {
       grid-template-columns: repeat(3, 1fr);
+      width: 98%;
 }
   @media(min-width: ${breakpoints.lg}px) {
       grid-template-columns: repeat(4, 1fr);
-      padding: 2rem;
+      padding: 1rem;
   }
 `
 export const StyleCard = styled.div`

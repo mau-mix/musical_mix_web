@@ -4,13 +4,13 @@ import Link from 'next/link'
 
 
 export const Container = styled.div`
-  background-color: black;
-  width: 92%;
+  background-color:  black;
+  width: 95%;
   display: flex;
   justify-content: space-between;
-  padding: .8rem 1.5rem;
+  padding: 1rem;
   @media (min-width: ${breakpoints.md}px) {
-      width: 99%;
+      width: 98%;
   }
 `
 

@@ -2,16 +2,15 @@ import styled from "styled-components";
 import { breakpoints } from "../../../ui";
 
 export const Container = styled.div`
-   background-color:${({ theme }) => theme.colors.dark};
-   height: 18rem;
-  @media(min-width: ${breakpoints.md}px) {
-    height: 13rem;
-  }
+  background-color:${({ theme }) => theme.colors.dark};
+  height: 28rem;
+
  
 `
 export const TitleContacto = styled.h1`
-   background-color: black;
-   padding: 1rem;
+   background-color: #000000;
+   padding: 3rem;
+   border-radius: 10px;
    text-align: center;
    font-size: ${({theme}) => theme.font.size.subtitle};
    font-family: ${({theme}) => theme.font.family};
@@ -24,7 +23,7 @@ export const TitleContacto = styled.h1`
 export const ContIcons = styled.div`
      display: flex;
      flex-direction: column;
-
+    
    @media(min-width: ${breakpoints.md}px) {
      flex-direction: row;
      justify-content: space-around;
@@ -32,8 +31,11 @@ export const ContIcons = styled.div`
 `
 export const ContDescription = styled.div`
   display: flex;
+  background-color: black;
    @media(min-width: ${breakpoints.md}px) {
-     margin-left: 1rem;  
+     padding: 1rem;
+     
+     border-radius: 10px;
   }
 `
 export const Description = styled.p`
@@ -41,7 +43,7 @@ export const Description = styled.p`
   font-size: ${({theme}) => theme.font.size.normal};
   font-family: ${({theme}) => theme.font.family};
   
-  @media(min-width: ${breakpoints.md}px) {
+  @media(min-width: ${breakpoints.lg}px) {
     letter-spacing: 2px;
     font-size: ${({theme}) => theme.font.size.subtitle};
   }

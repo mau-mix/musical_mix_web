@@ -9,7 +9,7 @@ const Logo = () => {
       <Link href='/'>
         <Image 
            src='/logo-mix1.png' 
-           width={230} 
+           width={200} 
            height={60} 
            alt='logo'
           />

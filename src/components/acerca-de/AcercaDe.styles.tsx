@@ -36,6 +36,9 @@ export const Wrapp = styled.div`
     margin: auto;
     gap: 1%;
     background-color: black;
+    @media(min-width: ${breakpoints.mm}px) {
+        grid-template-columns: repeat(2, 1fr);
+  }
     @media(min-width: ${breakpoints.md}px) {
         grid-template-columns: repeat(3, 1fr);
   }

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Wrapp, ContainerCards, StyleCard, TitleVideos, SubTitleVideos, ContEnlace, Enlace,TitleEnlace } from './Cards.styles'
+import { ContainerCards, StyleCard, TitleVideos, SubTitleVideos, ContEnlace, Enlace,TitleEnlace } from './Cards.styles'
 import {data} from '../../../data/videos'
 import StyleMark from '../icons/StyleMark/StyleMark'
 
@@ -8,7 +8,7 @@ import StyleMark from '../icons/StyleMark/StyleMark'
 function Cards() {
     
   return (
-    <Wrapp>
+    
         <ContainerCards>
             <StyleCard>
                 <TitleVideos>{data.items.title1}</TitleVideos>
@@ -123,7 +123,7 @@ function Cards() {
                
             
         </ContainerCards>    
-    </Wrapp>  
+     
 
     
    
